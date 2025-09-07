@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import cabinetsShowcase from "@/assets/cabinets-showcase.jpg";
 import countertopsShowcase from "@/assets/countertops-showcase.jpg";
 import kitchen3dDesign from "@/assets/kitchen-3d-design.jpg";
+import doormarkEuroShaker from "@/assets/doormark-euro-shaker.png";
 
 const Products = () => {
   const products = [
@@ -14,9 +15,9 @@ const Products = () => {
     },
     {
       title: "Custom Cabinet Doors", 
-      description: "Transform your existing cabinets with beautiful custom doors. Choose from various styles, finishes, and hardware options.",
-      image: cabinetsShowcase,
-      features: ["Multiple Styles", "Custom Finishes", "Quality Hardware", "Professional Fitting"]
+      description: "Transform your existing cabinets with beautiful custom doors from Doormark. Choose from Shaker, Contemporary Slab, and Traditional designs in various finishes.",
+      image: doormarkEuroShaker,
+      features: ["Doormark Designs", "Shaker & Contemporary Styles", "Custom Finishes", "Professional Installation"]
     },
     {
       title: "Countertops", 
