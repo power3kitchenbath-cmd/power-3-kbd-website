@@ -5,7 +5,7 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-primary">
-              The Cabinet Store + Culina Design
+              The Cabinet Store + United Cabinet Design
             </h2>
             <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
               We are very selective about what cabinet brands we offer our customers. A quality cabinet is 
