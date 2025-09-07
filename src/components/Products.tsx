@@ -34,9 +34,9 @@ const Products = () => {
     },
     {
       title: "Decorative Hardware",
-      description: "Premium cabinet hardware and decorative accessories from Richie Lu, featuring exceptional quality and timeless designs.",
+      description: "Premium cabinet hardware and decorative accessories from Richelieu Atlanta, featuring exceptional quality and timeless designs.",
       image: doormarkEuroShaker,
-      features: ["Richie Lu Quality", "Premium Finishes", "Timeless Designs", "Professional Installation"]
+      features: ["Richelieu Atlanta Quality", "Premium Finishes", "Timeless Designs", "Professional Installation"]
     },
     {
       title: "Complete Kitchen Design",
@@ -103,7 +103,7 @@ const Products = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">🏆 Trusted Brands</h4>
-                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like United Cabinets, Cambria Natural Quartz, and Richie Lu Decorative Hardware.</p>
+                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like United Cabinets, Cambria Natural Quartz, and Richelieu Atlanta Decorative Hardware.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">💰 Factory Direct Pricing</h4>
