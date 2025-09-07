@@ -4,7 +4,7 @@ import cabinetsShowcase from "@/assets/cabinets-showcase.jpg";
 import countertopsShowcase from "@/assets/countertops-showcase.jpg";
 import kitchen3dDesign from "@/assets/kitchen-3d-design.jpg";
 import doormarkEuroShaker from "@/assets/doormark-euro-shaker.png";
-import flooringSamples from "@/assets/flooring-samples.png";
+import lvpFlooringShowcase from "@/assets/lvp-flooring-showcase.png";
 
 const Products = () => {
   const products = [
@@ -29,7 +29,7 @@ const Products = () => {
     {
       title: "LVP Flooring",
       description: "Luxury Vinyl Plank flooring that combines the beauty of natural wood with superior durability and water resistance.",
-      image: flooringSamples,
+      image: lvpFlooringShowcase,
       features: ["Water Resistant", "Easy Maintenance", "Realistic Wood Look", "Professional Installation"]
     },
     {
