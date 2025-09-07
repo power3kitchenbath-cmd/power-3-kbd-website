@@ -7,7 +7,7 @@ const Products = () => {
   const products = [
     {
       title: "Custom Cabinets",
-      description: "Premium kitchen and bathroom cabinets crafted with precision. Featuring Showplace Wood Products - made right here in the Midwest.",
+      description: "Premium kitchen and bathroom cabinets crafted with precision. Featuring United Cabinets - made right here in the Midwest.",
       image: cabinetsShowcase,
       features: ["Showplace Cabinetry", "Custom Designs", "Soft-Close Hardware", "Multiple Wood Species"]
     },
