@@ -29,8 +29,8 @@ const Contact = () => {
                   <div>
                     <h4 className="font-semibold text-foreground">Showroom Address</h4>
                     <p className="text-muted-foreground">
-                      123 Cabinet Way<br />
-                      Kitchen City, State 12345
+                      706C Industrial Blvd<br />
+                      Dublin, GA 31021
                     </p>
                   </div>
                 </div>
