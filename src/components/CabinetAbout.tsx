@@ -52,7 +52,7 @@ const About = () => {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 border border-white/20">
                 <h3 className="text-2xl font-semibold text-white mb-4">Our Partners</h3>
                 <ul className="text-white/90 space-y-2">
-                  <li>• Showplace Wood Products (Cabinetry)</li>
+                  <li>• United Cabinets</li>
                   <li>• Cambria Natural Quartz Surfaces®</li>
                   <li>• Premium Hardware Suppliers</li>
                   <li>• Local Installation Specialists</li>
