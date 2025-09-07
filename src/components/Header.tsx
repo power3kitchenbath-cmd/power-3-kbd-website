@@ -1,12 +1,17 @@
 import { Button } from "@/components/ui/button";
+import power3Logo from "@/assets/power3-logo.png";
 
 const Header = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
-          <div className="text-2xl font-bold text-primary">
-            The Cabinet Store
+          <div className="flex items-center">
+            <img 
+              src={power3Logo} 
+              alt="Power3 Kitchen Bath Depot - Professional Kitchen and Bath Renovation Services" 
+              className="h-8 w-auto"
+            />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
