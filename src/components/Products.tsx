@@ -4,7 +4,6 @@ import cabinetsShowcase from "@/assets/cabinets-showcase.jpg";
 import countertopsShowcase from "@/assets/countertops-showcase.jpg";
 import kitchen3dDesign from "@/assets/kitchen-3d-design.jpg";
 import doormarkEuroShaker from "@/assets/doormark-euro-shaker.png";
-import flooringSamples from "@/assets/flooring-samples.png";
 
 const Products = () => {
   const products = [
@@ -23,7 +22,7 @@ const Products = () => {
     {
       title: "Countertops", 
       description: "Beautiful Cambria Natural Quartz Surfaces® and other premium countertop materials for lasting beauty and durability.",
-      image: flooringSamples,
+      image: countertopsShowcase,
       features: ["Cambria Quartz", "Granite Options", "Marble Selections", "Professional Installation"]
     },
     {
