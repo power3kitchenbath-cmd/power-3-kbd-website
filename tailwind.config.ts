@@ -63,13 +63,19 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-secondary': 'var(--gradient-secondary)',
         'gradient-hero': 'var(--gradient-hero)',
+        'gradient-accent': 'var(--gradient-accent)',
       },
       boxShadow: {
         'elegant': 'var(--shadow-elegant)',
         'glow': 'var(--shadow-glow)',
         'soft': 'var(--shadow-soft)',
       },
-      borderRadius: {
+      colors: {
+        'warm-accent': {
+          DEFAULT: 'hsl(var(--warm-accent))',
+          foreground: 'hsl(var(--warm-accent-foreground))',
+        },
+        border: "hsl(var(--border))",
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
