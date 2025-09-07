@@ -58,6 +58,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        'warm-accent': {
+          DEFAULT: 'hsl(var(--warm-accent))',
+          foreground: 'hsl(var(--warm-accent-foreground))',
+        },
       },
       backgroundImage: {
         'gradient-primary': 'var(--gradient-primary)',
@@ -70,12 +74,7 @@ export default {
         'glow': 'var(--shadow-glow)',
         'soft': 'var(--shadow-soft)',
       },
-      colors: {
-        'warm-accent': {
-          DEFAULT: 'hsl(var(--warm-accent))',
-          foreground: 'hsl(var(--warm-accent-foreground))',
-        },
-        border: "hsl(var(--border))",
+      borderRadius: {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
