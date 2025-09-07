@@ -14,7 +14,7 @@ const About = () => {
             </p>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
               Nearly every product sold from The Cabinet Store + United Cabinet Design is Made in the USA. 
-              You'll find well-known, American Made brands such as Showplace Cabinetry, our core cabinet line, 
+              You'll find well-known, American Made brands such as Doormark Cabinet Doors, our core cabinet line, 
               and Cambria Natural Quartz Surfaces®, our best selling countertop line.
             </p>
             
