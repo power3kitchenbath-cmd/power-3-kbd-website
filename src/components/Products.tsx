@@ -9,7 +9,7 @@ const Products = () => {
       title: "Custom Cabinets",
       description: "Premium kitchen and bathroom cabinets crafted with precision. Featuring United Cabinets - made right here in the Midwest.",
       image: cabinetsShowcase,
-      features: ["Showplace Cabinetry", "Custom Designs", "Soft-Close Hardware", "Multiple Wood Species"]
+      features: ["United Cabinets", "Custom Designs", "Soft-Close Hardware", "Multiple Wood Species"]
     },
     {
       title: "Countertops", 
@@ -82,7 +82,7 @@ const Products = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">🏆 Trusted Brands</h4>
-                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like Showplace Cabinetry and Cambria Natural Quartz.</p>
+                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like United Cabinets and Cambria Natural Quartz.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">💰 Factory Direct Pricing</h4>
