@@ -13,10 +13,22 @@ const Products = () => {
       features: ["United Cabinets", "Custom Designs", "Soft-Close Hardware", "Multiple Wood Species"]
     },
     {
+      title: "Custom Cabinet Doors", 
+      description: "Transform your existing cabinets with beautiful custom doors. Choose from various styles, finishes, and hardware options.",
+      image: cabinetsShowcase,
+      features: ["Multiple Styles", "Custom Finishes", "Quality Hardware", "Professional Fitting"]
+    },
+    {
       title: "Countertops", 
       description: "Beautiful Cambria Natural Quartz Surfaces® and other premium countertop materials for lasting beauty and durability.",
       image: countertopsShowcase,
       features: ["Cambria Quartz", "Granite Options", "Marble Selections", "Professional Installation"]
+    },
+    {
+      title: "LVP Flooring",
+      description: "Luxury Vinyl Plank flooring that combines the beauty of natural wood with superior durability and water resistance.",
+      image: countertopsShowcase,
+      features: ["Water Resistant", "Easy Maintenance", "Realistic Wood Look", "Professional Installation"]
     },
     {
       title: "Complete Kitchen Design",
