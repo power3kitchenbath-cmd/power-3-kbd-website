@@ -33,6 +33,12 @@ const Products = () => {
       features: ["Water Resistant", "Easy Maintenance", "Realistic Wood Look", "Professional Installation"]
     },
     {
+      title: "Decorative Hardware",
+      description: "Premium cabinet hardware and decorative accessories from Richie Lu, featuring exceptional quality and timeless designs.",
+      image: doormarkEuroShaker,
+      features: ["Richie Lu Quality", "Premium Finishes", "Timeless Designs", "Professional Installation"]
+    },
+    {
       title: "Complete Kitchen Design",
       description: "Full-service kitchen design and installation with expert planning, 3D visualization, and professional project management.",
       image: kitchen3dDesign,
@@ -97,7 +103,7 @@ const Products = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">🏆 Trusted Brands</h4>
-                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like United Cabinets and Cambria Natural Quartz.</p>
+                <p className="text-muted-foreground text-sm">We partner with extraordinary trade partners like United Cabinets, Cambria Natural Quartz, and Richie Lu Decorative Hardware.</p>
               </div>
               <div>
                 <h4 className="font-semibold text-foreground mb-2">💰 Factory Direct Pricing</h4>
