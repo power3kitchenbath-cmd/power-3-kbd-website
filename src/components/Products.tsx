@@ -5,6 +5,7 @@ import countertopsShowcase from "@/assets/countertops-showcase.jpg";
 import kitchen3dDesign from "@/assets/kitchen-3d-design.jpg";
 import doormarkEuroShaker from "@/assets/doormark-euro-shaker.png";
 import lvpFlooringShowcase from "@/assets/lvp-flooring-showcase.png";
+import hardwareShowcase from "@/assets/hardware-showcase.png";
 
 const Products = () => {
   const products = [
@@ -35,7 +36,7 @@ const Products = () => {
     {
       title: "Decorative Hardware",
       description: "Premium cabinet hardware and decorative accessories from Richelieu Atlanta, featuring exceptional quality and timeless designs.",
-      image: doormarkEuroShaker,
+      image: "/lovable-uploads/7b96258c-f419-4073-ab50-a6d9968f098b.png",
       features: ["Richelieu Atlanta Quality", "Premium Finishes", "Timeless Designs", "Professional Installation"]
     },
     {
