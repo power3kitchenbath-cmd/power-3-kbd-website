@@ -57,6 +57,7 @@ const About = () => {
                   <li>• Kitchen Bath Depot</li>
                   <li>• Power3 Kitchen Bath Installs</li>
                   <li>• Doormark Cabinet Doors</li>
+                  <li>• United Cabinets</li>
                 </ul>
               </div>
             </div>
