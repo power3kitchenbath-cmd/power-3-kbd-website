@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import cabinetsShowcase from "@/assets/cabinets-showcase.jpg";
 import countertopsShowcase from "@/assets/countertops-showcase.jpg";
+import kitchen3dDesign from "@/assets/kitchen-3d-design.jpg";
 
 const Products = () => {
   const products = [
@@ -20,7 +21,7 @@ const Products = () => {
     {
       title: "Complete Kitchen Design",
       description: "Full-service kitchen design and installation with expert planning, 3D visualization, and professional project management.",
-      image: cabinetsShowcase,
+      image: kitchen3dDesign,
       features: ["3D Design", "Project Management", "Expert Installation", "Warranty Included"]
     }
   ];
