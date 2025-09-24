@@ -1,7 +1,20 @@
 import { Button } from "@/components/ui/button";
+import { useAuth } from "@/hooks/useAuth";
+import { useNavigate } from "react-router-dom";
 import power3Logo from "@/assets/power3-logo.png";
 
 const Header = () => {
+  const { user, signOut } = useAuth();
+  const navigate = useNavigate();
+
+  const handleAuthClick = () => {
+    if (user) {
+      signOut();
+    } else {
+      navigate("/auth");
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
@@ -30,12 +43,28 @@ const Header = () => {
           </div>
           
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" className="hidden sm:inline-flex">
-              Sign In
+            <Button 
+              variant="ghost" 
+              className="hidden sm:inline-flex"
+              onClick={handleAuthClick}
+            >
+              {user ? "Sign Out" : "Sign In"}
             </Button>
-            <Button variant="hero">
-              Get Started
-            </Button>
+            {user ? (
+              <Button 
+                variant="outline"
+                onClick={() => navigate("/kiosk")}
+              >
+                Kiosk Mode
+              </Button>
+            ) : (
+              <Button 
+                variant="hero"
+                onClick={() => navigate("/auth")}
+              >
+                Get Started
+              </Button>
+            )}
           </div>
         </nav>
       </div>
