@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Start Your Project — Cabinet Store</title>
+  <style>
+    :root {
+      --bg: #0b1220;          /* deep navy */
+      --card: #111a2c;        /* darker navy */
+      --brand: #1e3a8a;       /* royal blue */
+      --brand-acc: #f5c542;   /* gold */
+      --muted: #a3b2d1;
+      --text: #e9eefc;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 15% -10%, rgba(30,58,138,.35), transparent),
+                  radial-gradient(1200px 800px at 110% 10%, rgba(245,197,66,.25), transparent),
+                  var(--bg);
+      color: var(--text);
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 48px 20px 80px; }
+    h1 { font-size: clamp(28px, 4vw, 40px); margin: 0 0 8px; }
+    .sub { color: var(--muted); margin-bottom: 28px; }
+    .grid { display: grid; gap: 18px; grid-template-columns: repeat(12, 1fr); }
+    .card { grid-column: span 6; background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.08); border-radius: 18px; padding: 22px; position: relative; overflow: hidden; }
+    @media (max-width: 820px) { .card { grid-column: span 12; } }
+    .card h3 { margin: 0 0 6px; font-size: 20px; }
+    .card p { margin: 0 0 14px; color: var(--muted); }
+    .btn-row { display: flex; gap: 10px; flex-wrap: wrap; }
+    .btn {
+      appearance: none; border: 1px solid rgba(255,255,255,.16); color: var(--text); background: transparent; padding: 10px 14px; border-radius: 12px; cursor: pointer; font-weight: 600; transition: .18s ease; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;
+    }
+    .btn.primary { background: linear-gradient(180deg, rgba(30,58,138,.9), rgba(30,58,138,.7)); border-color: rgba(30,58,138,.9); }
+    .btn:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,.25); }
+    .badge { position: absolute; inset: auto 16px 16px auto; background: rgba(245,197,66,.15); color: var(--brand-acc); border: 1px solid rgba(245,197,66,.5); padding: 6px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: .02em; }
+
+    .trust { margin-top: 22px; border: 1px dashed rgba(255,255,255,.16); border-radius: 14px; padding: 14px; color: var(--muted); font-size: 14px; }
+
+    /* Modal */
+    .modal { position: fixed; inset: 0; background: rgba(8,12,22,.65); display: none; align-items: center; justify-content: center; padding: 20px; z-index: 9999; }
+    .modal.open { display: flex; }
+    .modal-card { width: min(100%, 880px); max-height: 85vh; background: var(--card); border: 1px solid rgba(255,255,255,.1); border-radius: 16px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
+    .modal-head { display: flex; align-items: center; justify-content: space-between; padding: 12px 14px; border-bottom: 1px solid rgba(255,255,255,.08); }
+    .modal-title { font-weight: 700; }
+    .modal-close { appearance: none; background: transparent; border: 0; color: var(--text); font-size: 22px; cursor: pointer; }
+    .modal-body { background: #0d1526; }
+    .modal-body iframe { width: 100%; height: 65vh; border: 0; background: #0d1526; }
+
+    .note { font-size: 13px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Start Your Project</h1>
+    <div class="sub">Pick the path that fits you best—talk to a specialist, get a fast quote, design it yourself, or work 1:1 with our designer.</div>
+
+    <section class="grid">
+      <!-- 1. Talk to a Specialist -->
+      <article class="card" id="card-specialist">
+        <h3>Talk to a Specialist</h3>
+        <p>Connect with our cabinet experts for personalized guidance on your kitchen or bathroom project.</p>
+        <div class="btn-row">
+          <button class="btn primary" onclick="openModal('Talk to a Specialist', 'https://tally.so/r/REPLACE_WITH_SPECIALIST_FORM')">
+            📞 Get Expert Help
+          </button>
+          <a href="tel:+15551234567" class="btn">Call Now</a>
+        </div>
+        <div class="trust">
+          ✓ Free consultation • ✓ 20+ years experience • ✓ Licensed professionals
+        </div>
+      </article>
+
+      <!-- 2. Quick Quote -->
+      <article class="card" id="card-quote">
+        <h3>Get a Quick Quote</h3>
+        <p>Answer a few questions and get an instant ballpark estimate for your project.</p>
+        <div class="btn-row">
+          <button class="btn primary" onclick="openModal('Quick Quote Calculator', 'https://tally.so/r/REPLACE_WITH_QUICK_QUOTE_FORM')">
+            💰 Calculate Price
+          </button>
+        </div>
+        <div class="badge">POPULAR</div>
+        <div class="trust">
+          ✓ Instant estimates • ✓ No commitment • ✓ Compare options easily
+        </div>
+      </article>
+
+      <!-- 3. Design Services -->
+      <article class="card" id="card-designer">
+        <h3>Work with Our Designer</h3>
+        <p>Get professional 3D designs and renderings for your dream kitchen or bathroom.</p>
+        <div class="btn-row">
+          <button class="btn primary" onclick="openModal('Design Services', 'https://tally.so/r/REPLACE_WITH_DESIGNER_FORM')">
+            🎨 Start Design
+          </button>
+          <button class="btn" onclick="openModal('Schedule Design Consultation', 'https://calendly.com/REPLACE_CALENDLY/intro')">
+            📅 Book Call
+          </button>
+        </div>
+        <div class="trust">
+          ✓ Free initial design • ✓ 3D visualization • ✓ Professional layouts
+        </div>
+      </article>
+
+      <!-- 4. DIY Tools -->
+      <article class="card" id="card-diy">
+        <h3>Design It Yourself</h3>
+        <p>Use our online tools to plan your space and browse our product catalog.</p>
+        <div class="btn-row">
+          <a href="https://example.com/your-planner" class="btn primary" target="_blank">
+            🛠️ Kitchen Planner
+          </a>
+          <a href="https://example.com/your-visualizer" class="btn" target="_blank">
+            👁️ Product Visualizer
+          </a>
+        </div>
+        <div class="trust">
+          ✓ Free tools • ✓ Save & share designs • ✓ Product catalog access
+        </div>
+      </article>
+    </section>
+
+    <div class="note" style="text-align: center; margin-top: 32px;">
+      Need help deciding? <a href="tel:+15551234567" style="color: var(--brand-acc);">Call us at (555) 123-4567</a> or 
+      <button class="btn" onclick="openModal('Talk to a Specialist', 'https://tally.so/r/REPLACE_WITH_SPECIALIST_FORM')" style="margin-left: 8px;">
+        chat with a specialist
+      </button>
+    </div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="modal">
+    <div class="modal-card">
+      <div class="modal-head">
+        <div class="modal-title" id="modal-title">Loading...</div>
+        <button class="modal-close" onclick="closeModal()">&times;</button>
+      </div>
+      <div class="modal-body">
+        <iframe id="modal-iframe" src="" title="Form"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Modal functionality
+    function openModal(title, src) {
+      const modal = document.getElementById('modal');
+      const modalTitle = document.getElementById('modal-title');
+      const modalIframe = document.getElementById('modal-iframe');
+      
+      modalTitle.textContent = title;
+      modalIframe.src = src;
+      modal.classList.add('open');
+      
+      // GA4 event tracking
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'start_project_open', {
+          'title': title,
+          'src': src
+        });
+      }
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      const modalIframe = document.getElementById('modal-iframe');
+      
+      modal.classList.remove('open');
+      modalIframe.src = '';
+    }
+
+    // Close modal on overlay click
+    document.getElementById('modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeModal();
+      }
+    });
+
+    // Close modal on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        closeModal();
+      }
+    });
+
+    // Optional: Auto-resize iframe based on content
+    window.addEventListener('message', function(event) {
+      const iframe = document.getElementById('modal-iframe');
+      if (event.data && event.data.height && iframe.src.includes(event.origin)) {
+        iframe.style.height = event.data.height + 'px';
+      }
+    });
+  </script>
+</body>
+</html>
